@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MyPlate Food Groups</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f4f4f4;
+    }
+    h1 {
+      color: #4CAF50;
+    }
+    .plate {
+      display: grid;
+      grid-template-columns: 60% 40%; /* Make Vegetables larger than Fruits */
+      grid-template-rows: 60% 40%;   /* Make Grains larger than Protein */
+      width: 300px;
+      height: 300px;
+      margin: 50px auto;
+      border: 5px solid #4CAF50;
+      border-radius: 50%;
+      position: relative;
+    }
+    .section {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+    }
+    .section img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    .grains {
+      grid-column: 2 / 3;
+      grid-row: 1 / 2;
+    }
+    .vegetables {
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+    }
+    .fruits {
+      grid-column: 1 / 2;
+      grid-row: 2 / 3;
+    }
+    .protein {
+      grid-column: 2 / 3;
+      grid-row: 2 / 3;
+    }
+    .dairy {
+      position: absolute;
+      top: -30px;
+      right: -30px;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+    .dairy img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    p {
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>MyPlate Food Groups</h1>
+  
+  <div class="plate">
+    <div class="section fruits">
+      <img src="fruits.jpg" alt="Fruits">
+    </div>
+    <div class="section vegetables">
+      <img src="vegetables.jpg" alt="Vegetables">
+    </div>
+    <div class="section grains">
+      <img src="grains.jpg" alt="Grains">
+    </div>
+    <div class="section protein">
+      <img src="protein.jpg" alt="Protein">
+    </div>
+    <div class="dairy">
+      <img src="dairy.jpg" alt="Dairy">
+    </div>
+  </div>
+
+  <h2>The Five Food Groups</h2>
+  <div>
+    <p><strong>Fruits:</strong> Examples include apples, bananas, berries, and oranges. Fruits provide essential vitamins and fiber.</p>
+    
+    <p><strong>Vegetables:</strong> Examples include spinach, carrots, broccoli, and peas. Vegetables are rich in nutrients and fiber.</p>
+    
+    <p><strong>Grains:</strong> Examples include bread, rice, pasta, and oats. Grains provide carbohydrates for energy.</p>
+    
+    <p><strong>Protein:</strong> Examples include meat, poultry, fish, beans, and nuts. Protein helps build and repair tissues.</p>
+    
+    <p><strong>Dairy:</strong> Examples include milk, cheese, and yogurt. Dairy provides calcium and supports bone health.</p>
+  </div>
+
+</body>
+</html>
